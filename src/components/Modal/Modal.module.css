@@ -1,78 +1,99 @@
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-  }
-  
-  .modalContent {
-    background: #333;
-    padding: 20px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 500px;
-    color: #fff;
-    position: relative;
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .formGroup {
-    margin-bottom: 15px;
-  }
-  
-  .formGroup label {
-    margin-bottom: 5px;
-  }
-  
-  .formGroup input,
-  .formGroup select,
-  .formGroup textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #555;
-    border-radius: 4px;
-    background: #444;
-    color: #fff;
-  }
-  
-  .formActions {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .saveButton {
-    background-color: var(--cinza);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .clearButton {
-    background-color: var(--cinza);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  color: #fff;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 90%;
+  padding: 10px;
+  border: 2px solid var(--azul);
+  border-radius: 4px;
+  background: var(--card);
+  color: #fff;
+}
+
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.saveButton,
+.clearButton {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 5px;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+}
+
+.saveButton {
+  background-color: var(--preto);
+  color: var(--azul);
+  border: 1px solid var(--azul);
+  box-shadow: inset 0 0 5px var(--azul), 0 0 5px var(--azul);
+}
+
+.clearButton {
+  background-color: var(--card);
+  border: 1px solid var(--gray);
+  color: white;
+}

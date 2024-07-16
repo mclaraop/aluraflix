@@ -46,7 +46,7 @@
 }
 
 .active {
-  background-color: #000000;
+  background-color: var(--preto);
   color: var(--azul);
   border: 1px solid var(--azul);
   box-shadow: inset 0 0 15px var(--azul), 0 0 10px var(--azul);

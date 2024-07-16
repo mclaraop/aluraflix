@@ -19,6 +19,7 @@ const Inicio = () => {
         const data = await getVideos();
         setVideos(data);
         setIsLoading(false);
+        setSelectedVideo(data[0]); // Inicializa com o primeiro vídeo
       } catch (error) {
         console.error('Error fetching videos:', error);
         setIsLoading(false);
@@ -56,6 +57,10 @@ const Inicio = () => {
     setSelectedVideo(null);
   };
 
+  const handleSelectVideo = (video) => {
+    setSelectedVideo(video);
+  };
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -78,27 +83,28 @@ const Inicio = () => {
   return (
     <div className={styles.inicio}>
       <Header />
-      <Banner video={videos[0]} />
+      {selectedVideo && <Banner video={selectedVideo} />}
       {Object.keys(categories).map((category, index) => (
         <div key={index}>
           <h2 className={`${styles.categoryTitle} ${categoryStyles[category]}`}>{category}</h2>
           <div className={styles.cardsContainer}>
             {categories[category].map((video) => (
-              <Card 
-                key={video.id} 
-                video={video} 
-                onEdit={handleEdit} 
-                onDelete={handleDelete} 
+              <Card
+                key={video.id}
+                video={video}
+                onEdit={handleEdit}
+                onDelete={handleDelete}
+                onSelect={handleSelectVideo} // Passa a função de seleção de vídeo para o card
               />
             ))}
           </div>
         </div>
       ))}
-      <Modal 
-        isOpen={isModalOpen} 
-        onClose={handleCloseModal} 
-        onSave={handleSave} 
-        video={selectedVideo} 
+      <Modal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        onSave={handleSave}
+        video={selectedVideo}
       />
       <Rodape />
     </div>

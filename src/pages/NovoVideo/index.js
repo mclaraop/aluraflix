@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addVideo } from '../../api';
 import Header from '../../components/Header'; // Ajuste o caminho conforme necessário
+import Rodape from '../../components/Rodape'; // Importa o componente Rodape
 import styles from './NovoVideo.module.css';
 
 const NovoVideo = () => {
@@ -97,6 +98,7 @@ const NovoVideo = () => {
           </div>
         </form>
       </div>
+      <Rodape />
     </div>
   );
 };

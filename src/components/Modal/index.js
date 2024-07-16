@@ -35,9 +35,9 @@ const Modal = ({ isOpen, onClose, onSave, video }) => {
 
   return (
     <div className={styles.modalOverlay}>
-      <div className={styles.modal}>
+      <div className={styles.modalContent}>
         <button className={styles.closeButton} onClick={onClose}>×</button>
-        <h2 className={styles.title}>Editar Card</h2>
+        <h2 className={styles.title}>EDITAR CARD:</h2>
         <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label htmlFor="title">Título</label>
@@ -51,13 +51,16 @@ const Modal = ({ isOpen, onClose, onSave, video }) => {
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="category">Categoria</label>
-            <input
-              type="text"
+            <select
               id="category"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
               required
-            />
+            >
+              <option value="FRONT END">Front-end</option>
+              <option value="BACK END">Back-end</option>
+              <option value="INOVAÇÃO E GESTÃO">Inovação e Gestão</option>
+            </select>
           </div>
           <div className={styles.formGroup}>
             <label htmlFor="imageUrl">Imagem (URL)</label>
@@ -89,8 +92,8 @@ const Modal = ({ isOpen, onClose, onSave, video }) => {
             />
           </div>
           <div className={styles.formActions}>
-            <button type="submit" className={styles.saveButton}>Guardar</button>
-            <button type="button" className={styles.clearButton} onClick={onClose}>Cancelar</button>
+            <button type="submit" className={styles.saveButton}>GUARDAR</button>
+            <button type="button" className={styles.clearButton} onClick={onClose}>LIMPAR</button>
           </div>
         </form>
       </div>
@@ -99,5 +102,3 @@ const Modal = ({ isOpen, onClose, onSave, video }) => {
 };
 
 export default Modal;
-
-
