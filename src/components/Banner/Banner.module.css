@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .banner {
   position: relative;
-  width: 100%;
-  height: 400px;
+  width: 97,5%;
+  height: 470px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -17,7 +19,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -28,46 +30,48 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1200px;
-  padding: 2rem; /* Adicionar padding para espaçamento interno */
+  margin-top: 2rem;
 }
 
 .textContent {
   text-align: left;
   max-width: 60%;
-  display: flex;
-  flex-direction: column;
+  margin-top: 2rem;
 }
 
 .title {
-  font-size: 2.5rem;
-  background-color: #6BD1FF;
-  color: black;
-  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  background-color: var(--cor-frontend);
+  color: var(--branco);
+  padding: 1rem 1.5rem;
   border-radius: 10px;
   display: inline-block;
-  width: fit-content;
   margin-bottom: 1rem;
 }
 
 .subtitle {
   font-size: 1.8rem;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  font-weight: normal;
 }
 
 .description {
   font-size: 1rem;
   margin-top: 1rem;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
 }
 
 .featuredVideo {
-  margin-left: 2rem; /* Adicionar margem para afastar a imagem do texto */
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-top: 3rem;
 }
 
 .featuredThumbnail {
-  border: 5px solid #6BD1FF;
+  border: 2px solid #6BD1FF;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); /* Sombra azul */
-  width: 500px; /* Definir largura fixa */
-  height: 300px; /* Manter a proporção da imagem */
+  box-shadow: inset 0 0 50px var(--azul), 0 0 5px var(--azul);
+  width: 500px;
+  height: 250px;
 }

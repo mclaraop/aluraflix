@@ -3,81 +3,81 @@
     {
       "id": "1",
       "titulo": "O que é React JS?",
-      "categoria": "Front-end",
+      "categoria": "FRONT END",
       "imagem": "https://i.ytimg.com/vi/6IuQUgeDPg0/maxresdefault.jpg",
-      "video": "https://www.youtube.com/watch?v=6IuQUgeDPg0",
+      "video": "https://www.youtube.com/embed/6IuQUgeDPg0",
       "descricao": "Afinal, o que é React JS? Neste vídeo, Vanessa Tonini e Mario Souto explicam isto para você falando sobre como esta ferramenta surgiu, para que ela serve, quais são suas aplicações e relação com outras ferramentas e como começar a trabalhar com ele."
     },
     {
       "id": "2",
       "titulo": "O que faz uma desenvolvedora front-end?",
-      "categoria": "Front-end",
+      "categoria": "FRONT END",
       "imagem": "https://i.ytimg.com/vi/ZY3-MFxVdEw/maxresdefault.jpg",
-      "video": "https://www.youtube.com/watch?v=ZY3-MFxVdEw",
+      "video": "https://www.youtube.com/embed/ZY3-MFxVdEw",
       "descricao": "O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa nesse episódio!"
     },
     {
       "id": "3",
       "titulo": "O que é e o que faz quem trabalha com UX?",
-      "categoria": "Front-end",
+      "categoria": "FRONT END",
       "imagem": "https://i.ytimg.com/vi/FJhMCi07T4A/maxresdefault.jpg",
-      "video": "https://www.youtube.com/watch?v=FJhMCi07T4A",
+      "video": "https://www.youtube.com/embed/FJhMCi07T4A",
       "descricao": "Nesse primeiro episódio, confira o que é front-end e como seguir nessa área da tecnologia, através do Tech Guide front-end, um Guia de Estudos do iniciante ao avançado. São 3 níveis de Profundidade e 1 nível de Expansão, formando seu perfil como Dev Front-End em T."
     },
     {
       "id": "4",
       "titulo": "JavaScript para back-end",
-      "categoria": "Back-end",
+      "categoria": "BACK END",
       "imagem": "https://i.ytimg.com/vi/uyRDbGZG92E/maxresdefault.jpg",
-      "video": "https://www.youtube.com/watch?v=uyRDbGZG92E",
+      "video": "https://www.youtube.com/embed/uyRDbGZG92E",
       "descricao": "Nesse episódio do Hipsters.Talks vamos conversar sobre a utilização de JavaScript para back-end e conhecer mais sobre sua aplicação no dia a dia de desenvolvimento."
     },
     {
       "id": "5",
       "titulo": "GitHub CLI - Uma Nova Experiência no Github!",
-      "categoria": "Back-end",
+      "categoria": "BACK END",
       "imagem": "https://i.ytimg.com/vi/6o6-bKOZOEY/maxresdefault.jpg",
-      "video": "https://www.youtube.com/watch?v=6o6-bKOZOEY",
+      "video": "https://www.youtube.com/embed/6o6-bKOZOEY",
       "descricao": "Nesse vídeo vamos aprender um pouco mais o que seria o GitHub CLI e quais são as suas vantagens!"
     },
     {
       "id": "6",
       "titulo": "Qual é a melhor linguagem de programação?",
-      "categoria": "Back-end",
+      "categoria": "BACK END",
       "imagem": "https://i.ytimg.com/vi/Uh-GNH-t89w/maxresdefault.jpg",
-      "video": "https://www.youtube.com/watch?v=Uh-GNH-t89w",
+      "video": "https://www.youtube.com/embed/Uh-GNH-t89w",
       "descricao": "PHP, JavaScript, Python, Java e outras... qual é a melhor? Como surgiram essas linguagens e quais as aplicações e usos de cada uma na aprendizagem e para o mercado? Descubra nesta conversa da Roberta Arcoverde e do Paulo Silveira."
     },
     {
       "id": "7",
       "titulo": "As 9 Softskills mais desejadas pelas empresas",
-      "categoria": "Inovação e Gestão",
+      "categoria": "INOVAÇÃO E GESTÃO",
       "imagem": "https://i.ytimg.com/vi/SjY0zj17-8U/maxresdefault.jpg",
-      "video": "https://www.youtube.com/watch?v=SjY0zj17-8U&list=PLh2Y_pKOa4UcjTE5zJ6Bbq9eiOtKuFQS_",
+      "video": "https://www.youtube.com/embed/SjY0zj17-8U",
       "descricao": "Descubra as softskills essenciais que as empresas mais valorizam e como desenvolvê-las para se destacar no mercado de trabalho."
     },
     {
       "id": "8",
       "titulo": "Agile e Squads: Estratégias Avançadas",
-      "categoria": "Inovação e Gestão",
+      "categoria": "INOVAÇÃO E GESTÃO",
       "imagem": "https://i.ytimg.com/vi/xd8YurI_VsU/maxresdefault.jpg",
-      "video": "https://www.youtube.com/watch?v=xd8YurI_VsU&list=PLh2Y_pKOa4UcjTE5zJ6Bbq9eiOtKuFQS_&index=6",
+      "video": "https://www.youtube.com/embed/xd8YurI_VsU",
       "descricao": "Explore as últimas inovações e estratégias avançadas no desenvolvimento de aplicativos móveis com React Native."
     },
     {
       "id": "9",
       "titulo": "Como aprender melhor?",
-      "categoria": "Inovação e Gestão",
+      "categoria": "INOVAÇÃO E GESTÃO",
       "imagem": "https://i.ytimg.com/vi/uOagLB3uyeU/maxresdefault.jpg",
-      "video": "https://www.youtube.com/watch?v=uOagLB3uyeU&list=PLh2Y_pKOa4UcjTE5zJ6Bbq9eiOtKuFQS_&index=14",
+      "video": "https://www.youtube.com/embed/uOagLB3uyeU",
       "descricao": "Dicas e estratégias para melhorar seu aprendizado em qualquer área, incluindo técnicas eficazes e abordagens modernas."
     },
     {
       "id": "fdac",
       "titulo": "O que é Angular e AngularJS? #HipstersPontoTube",
-      "categoria": "Front-end",
+      "categoria": "FRONT END",
       "imagem": "https://img.youtube.com/vi/LFlNU30u7d8/maxresdefault.jpg",
-      "video": "https://youtu.be/LFlNU30u7d8",
+      "video": "https://www.youtube.com/embed/LFlNU30u7d8",
       "descricao": "Vanessa Tonini e Mario Souto conversam neste vídeo sobre o Angular  e explicam melhor o que é este framework, como ele surgiu, quando é utilizado e quais são as diferenças entre suas versões. Confira!"
     }
   ]

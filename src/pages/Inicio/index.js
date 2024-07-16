@@ -70,20 +70,15 @@ const Inicio = () => {
   }, {});
 
   const categoryStyles = {
-    'Front-end': styles.frontend,
-    'Back-end': styles.backend,
-    'Inovação e Gestão': styles.inovacaoEgestao,
+    'FRONT END': styles.frontend,
+    'BACK END': styles.backend,
+    'INOVAÇÃO E GESTÃO': styles.inovacaoEgestao,
   };
 
   return (
     <div className={styles.inicio}>
       <Header />
-      <Banner 
-        imageUrl={videos[0]?.imagem || ''} 
-        title={videos[0]?.categoria || 'Bem-vindo ao AluraFlix'} 
-        subtitle={videos[0]?.titulo || ''}
-        description={videos[0]?.descricao || 'Os melhores vídeos de tecnologia'}
-      />
+      <Banner video={videos[0]} />
       {Object.keys(categories).map((category, index) => (
         <div key={index}>
           <h2 className={`${styles.categoryTitle} ${categoryStyles[category]}`}>{category}</h2>

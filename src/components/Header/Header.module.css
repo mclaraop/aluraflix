@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
 .header {
   font-weight: bold;
   font-size: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 25px;
   background-color: var(--cinza);
-  color: #fff; /* Texto branco */
+  color: #fff;
 }
 
 .logoImage {
@@ -25,17 +27,18 @@
 }
 
 .link {
-  display: flex; /* Flexbox para centralização */
-  justify-content: center; /* Centralizar horizontalmente */
-  align-items: center; /* Centralizar verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 90px;
-  height: 15px; /* Altura fixa para melhor centralização */
+  height: 15px;
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px; /* Ajuste de padding */
+  padding: 10px 20px;
   border-radius: 10px;
-  border: 1px solid transparent; /* Borda padrão transparente */
-  transition: all 0.3s ease; /* Transição suave */
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .link:hover {
@@ -43,12 +46,13 @@
 }
 
 .active {
-  background-color: #000000; /* Cor de fundo ativa */
-  color: var(--azul); /* Cor do texto ativo */
-  border: 1px solid var(--azul); /* Borda ativa */
+  background-color: #000000;
+  color: var(--azul);
+  border: 1px solid var(--azul);
+  box-shadow: inset 0 0 15px var(--azul), 0 0 10px var(--azul);
 }
 
-/* Classe específica para o botão Novo Vídeo */
-.novoVideo {
-  border: 1px solid var(--gray) !important; /* Borda para o botão Novo Vídeo */
+.newVideoButton {
+  border: 1px solid var(--gray);
+  color: var(--gray);
 }

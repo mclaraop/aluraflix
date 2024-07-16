@@ -3,10 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  position: relative;
+  bottom: 0;
 }
 
 .logo {
-  max-width: 100%;
-  height: auto;
+  padding-top: 30px;
+  height: 100px;
+  width: 100%;
 }

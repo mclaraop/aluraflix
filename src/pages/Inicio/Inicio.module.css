@@ -7,21 +7,37 @@
 .categoryTitle {
   font-size: 2rem;
   margin: 20px 0;
+  display: inline-block;
+  padding: 0.2rem 1rem;
 }
 
 .cardsContainer {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .frontend {
-  color: var(--cor-frontend, #6BD1FF);
+  background-color: var(--cor-frontend, #6BD1FF);
+  color: var(--branco, #ffffff);
+  padding: 0.4rem 2rem;
+  border-radius: 10px;
+  margin-left: 30px;
 }
 
 .backend {
-  color: var(--cor-backend, #00C86F);
+  background-color: var(--cor-backend, #00C86F);
+  color: var(--branco, #ffffff);
+  padding: 0.4rem 2rem;
+  border-radius: 5px;
+  margin-left: 30px;
 }
 
 .inovacaoEgestao {
-  color: var(--cor-inovacao-gestao, #FFBA05);
+  background-color: var(--cor-inovacao-gestao, #FFBA05);
+  color: var(--branco, #ffffff);
+  padding: 0.4rem 2rem;
+  border-radius: 5px;
+  margin-left: 30px;
 }

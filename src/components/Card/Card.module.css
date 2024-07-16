@@ -1,14 +1,13 @@
 .card {
-  border: 2px solid var(--cor-frontend, #00C86F); /* Definindo cor padrão para categorias diferentes */
-  border-radius: 8px;
   overflow: hidden;
   width: 300px;
   margin: 10px;
-  background-color: #1c1c1c; /* Fundo preto */
-  color: #fff; /* Texto branco */
+  background-color: #1c1c1c;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .thumbnail {
@@ -17,36 +16,25 @@
   object-fit: cover;
 }
 
-.details {
-  padding: 10px;
-  flex-grow: 1;
-}
-
-.title {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.description {
-  font-size: 0.9rem;
-  color: #ccc;
-}
-
-.buttons {
+.buttonsContainer {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   background-color: #000000;
+  border-top: 4px solid transparent;
+  border-radius: 0 0 10px 10px;
 }
 
 .editButton,
 .deleteButton {
+  font-family: 'Roboto';
+  font-weight: bold;
   padding: 5px 10px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  background-color: #000; /* Fundo preto */
+  background-color: #000;
   color: white;
   flex: 1;
   margin: 0 5px;
@@ -55,12 +43,42 @@
   justify-content: center;
 }
 
-.editButton::before {
-  content: "✎";
+.icon {
+  width: 20px;
+  height: 20px;
   margin-right: 0.5rem;
 }
 
-.deleteButton::before {
-  content: "✖";
-  margin-right: 0.5rem;
+.frontendCard {
+  border: 4px solid var(--cor-frontend);
+  box-shadow: inset 0 0 15px var(--cor-frontend), 0 0 10px var(--cor-frontend);
 }
+
+.backendCard {
+  border: 4px solid var(--cor-backend);
+  box-shadow: inset 0 0 15px var(--cor-backend), 0 0 10px var(--cor-backend);
+}
+
+.inovacaoEgestaoCard {
+  border: 4px solid var(--cor-gestao);
+  box-shadow: inset 0 0 15px var(--cor-gestao), 0 0 10px var(--cor-gestao);
+}
+
+.frontendCard .buttonsContainer {
+  border: 2px;
+  border-color: var(--cor-frontend);
+  box-shadow: inset 0 0 6px var(--cor-frontend), 0 0 10px var(--cor-frontend);
+}
+
+.backendCard .buttonsContainer {
+  border: 2px;
+  border-color: var(--cor-backend);
+  box-shadow: inset 0 0 6px var(--cor-backend), 0 0 10px var(--cor-backend);
+}
+
+.inovacaoEgestaoCard .buttonsContainer {
+  border: 2px;
+  border-color: var(--cor-gestao);
+  box-shadow: inset 0 0 6px var(--cor-gestao), 0 0 10px var(--cor-gestao);
+}
+

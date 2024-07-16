@@ -59,7 +59,7 @@
   }
   
   .saveButton {
-    background-color: #28a745;
+    background-color: var(--cinza);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -68,7 +68,7 @@
   }
   
   .clearButton {
-    background-color: #dc3545;
+    background-color: var(--cinza);
     color: white;
     border: none;
     padding: 10px 20px;

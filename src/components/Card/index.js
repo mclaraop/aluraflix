@@ -2,20 +2,27 @@ import React from 'react';
 import styles from './Card.module.css';
 
 const Card = ({ video, onEdit, onDelete }) => {
+  const categoryCardStyles = {
+    'FRONT END': styles.frontendCard,
+    'BACK END': styles.backendCard,
+    'INOVAÇÃO E GESTÃO': styles.inovacaoEgestaoCard,
+  };
+
+  const cardClass = categoryCardStyles[video.categoria.toUpperCase()] || '';
+
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${cardClass}`}>
       <img src={video.imagem} alt={video.titulo} className={styles.thumbnail} />
-      <div className={styles.details}>
-        <h2 className={styles.title}>{video.titulo}</h2>
-        <p className={styles.description}>{video.descricao}</p>
-      </div>
-      <div className={styles.buttons}>
-        <button className={styles.editButton} onClick={() => onEdit(video)}>✎ Editar</button>
-        <button className={styles.deleteButton} onClick={() => onDelete(video.id)}>✖ Excluir</button>
+      <div className={`${styles.buttonsContainer} ${cardClass}`}>
+        <button className={styles.deleteButton} onClick={() => onDelete(video.id)}>
+          <img src="/imagens/deletar.png" alt="Deletar" className={styles.icon} /> DELETAR
+        </button>
+        <button className={styles.editButton} onClick={() => onEdit(video)}>
+          <img src="/imagens/editar.png" alt="Editar" className={styles.icon} /> EDITAR
+        </button>
       </div>
     </div>
   );
 };
 
 export default Card;
-
