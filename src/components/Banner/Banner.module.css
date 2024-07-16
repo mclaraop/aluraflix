@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .banner {
+  border: 2px solid var(--cor-frontend);
   position: relative;
   width: 97,5%;
   height: 470px;
@@ -69,7 +70,7 @@
 }
 
 .featuredThumbnail {
-  border: 2px solid #6BD1FF;
+  border: 2px solid var(--cor-frontend);
   border-radius: 10px;
   box-shadow: inset 0 0 50px var(--azul), 0 0 5px var(--azul);
   width: 500px;

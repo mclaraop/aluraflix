@@ -1,8 +1,8 @@
-const baseURL = 'http://localhost:3001/videos';
+const baseURL = 'https://my-json-server.typicode.com/mclaraop/aluraflix-api/videos';
 
 export const getVideos = async () => {
   try {
-    const response = await fetch(`${baseURL}`);
+    const response = await fetch(baseURL);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -16,7 +16,7 @@ export const getVideos = async () => {
 
 export const addVideo = async (newVideo) => {
   try {
-    const response = await fetch(`${baseURL}`, {
+    const response = await fetch(baseURL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

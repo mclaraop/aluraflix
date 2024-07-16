@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addVideo } from '../../api';
-import Header from '../../components/Header'; // Ajuste o caminho conforme necessário
-import Rodape from '../../components/Rodape'; // Importa o componente Rodape
+import Header from '../../components/Header'; 
+import Rodape from '../../components/Rodape';
 import styles from './NovoVideo.module.css';
 
 const NovoVideo = () => {

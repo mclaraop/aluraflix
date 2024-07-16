@@ -19,7 +19,7 @@ const Inicio = () => {
         const data = await getVideos();
         setVideos(data);
         setIsLoading(false);
-        setSelectedVideo(data[0]); // Inicializa com o primeiro vídeo
+        setSelectedVideo(data[0]);
       } catch (error) {
         console.error('Error fetching videos:', error);
         setIsLoading(false);
@@ -54,7 +54,6 @@ const Inicio = () => {
 
   const handleCloseModal = () => {
     setModalOpen(false);
-    setSelectedVideo(null);
   };
 
   const handleSelectVideo = (video) => {
