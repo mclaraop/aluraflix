@@ -1,0 +1,73 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay escuro */
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem; /* Adicionar padding para espaçamento interno */
+}
+
+.textContent {
+  text-align: left;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.5rem;
+  background-color: #6BD1FF;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.featuredVideo {
+  margin-left: 2rem; /* Adicionar margem para afastar a imagem do texto */
+}
+
+.featuredThumbnail {
+  border: 5px solid #6BD1FF;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.5); /* Sombra azul */
+  width: 500px; /* Definir largura fixa */
+  height: 300px; /* Manter a proporção da imagem */
+}

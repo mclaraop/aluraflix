@@ -1,0 +1,27 @@
+.inicio {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.categoryTitle {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.frontend {
+  color: var(--cor-frontend, #6BD1FF);
+}
+
+.backend {
+  color: var(--cor-backend, #00C86F);
+}
+
+.inovacaoEgestao {
+  color: var(--cor-inovacao-gestao, #FFBA05);
+}

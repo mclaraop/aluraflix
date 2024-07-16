@@ -1,8 +1,22 @@
+:root {
+  --fonte: 'Roboto';
+  --cinza: #262626;
+  --branco: #FFFFFF;
+  --cor-backend: #00C86F;
+  --cor-gestao: #FFBA05;
+  --cor-frontend: #6BD1FF;
+  --azul: #2271D1;
+  --vermelho: #E53935;
+  --gray: #A5A5A5;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--fonte);
+  background-color: var(--cinza);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
